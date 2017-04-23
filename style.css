@@ -1,0 +1,776 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+body{
+    background: #e9ebee;
+}
+ul,li{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+header,section,aside,footer{
+    display: block;
+    clear: both;
+}
+.col-center-1,.col-center-2,.col-left,.col-right{
+    margin: 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*============Navagation Bar=============*/
+.group{
+    top: 0;
+    border-radius: 0px;
+    background: #3b5998;
+    padding-left: 5%;
+    height: 40px;
+}
+.group .left{
+    float: left;
+    display: inline-block;
+    width: 45%;
+}
+.group .fa-facebook-official{
+    color: #fff;
+    /*padding: 5px;*/
+    float: left;
+    /*display: inline-block;*/
+    /*line-height: 25px;*/
+    margin: 3px 0px;
+}
+.group .search{
+    border: 1px solid #e5e6e9;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: #fff;
+    float: left;
+    width: 80%;
+}
+.group .search input{
+    width: 80%;
+    border: none;
+    font-size: 15px;
+    padding: 4px 5px;
+}
+.group .search i{
+    float: right;
+    background: #f6f7f9;
+    border-radius: 0 3px 3px 0;
+    padding: 5px 15px;
+}
+/*---------- NavBar right ----------*/
+.group .right{
+    display: inline-block;
+    float: right;
+    margin-right: 21%;
+    width: 30%;
+}
+.group .right a img{
+    height: 25px;
+    margin-top: 6px;
+    display: inline-block;
+    float: left;
+    border-radius: 3px;
+}
+.group .right a, .group .right a span {
+    line-height: 35px;
+    padding-left: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.group .right span{
+    margin: 0px 5px;
+    color: #29487d;
+}
+/*______NavBar Right icon______*/
+.group .right .icon{
+    display: inline-block;
+    margin: 0px 8px;
+    margin-top: 10px;
+}
+.group .right .icon i{
+    margin: 0px 10px;
+}
+
+
+/*============Left Aside=============*/
+.col-left{
+    display: inline-block;
+    vertical-align: top;
+    width: 14%;
+    margin-left: 5%;
+    background: #e9ebee;
+    border-radius: 2px;
+    font-size: 13px;
+}
+.col-left .profile{
+    margin-top: 5px;
+}
+.col-left .row:hover , .active{
+    border: 1px solid #f6f7f9;
+    background: #f6f7f9;
+    border-radius: 2px;
+}
+.active{
+    font-weight: bold;
+}
+.col-left img{
+    width: 10%;
+    float: left;
+    margin: 5px;
+}
+.col-left i{
+    margin: 5px;
+}
+.col-left span{
+    display: inline-block;
+    line-height: 20px;
+    margin: 5px;
+    color: #1d2129;
+}
+.col-left .row .fa-ellipsis-h{
+    float: right;
+    margin: 10px;
+}
+.col-left .title span{
+    color: #4b4f56;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.col-left .title a{
+    float: right;
+    margin: 8px;
+    text-decoration: underline;
+}
+.col-left .more a span{
+    color: #365899;
+}
+.shortcut .bottom span{
+    margin-left:0px; 
+}
+.shortcut .bottom a{
+    color: #365899;
+}
+
+
+
+/*============Center-1=============*/
+.col-center-1{
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    margin-left: 0.5%;
+    border: 1px solid #e5e6e9;
+}
+.col-center-1 .row{
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 2px;
+    display: table;
+}
+.col-center-1 .first{
+    margin: 0;
+    margin: 0px;
+}
+/*============Center 1 Post=============*/
+.cen-post-nav{
+    background: #f6f7f9;
+    color: #4b4f56;
+    float: left;
+    width: 100%;
+}
+.cen-post-nav li{
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.cen-post-nav li:nth-child(3){
+    color:#365899;
+}
+.cen-post-nav li i {
+    padding: 5px 5px;
+    color: #4b4f56;
+}
+.cen-post{
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+.cen-post img{
+    width: 7%;
+    float: left;
+    margin: 10px 10px;
+    border: 1px solid #e5e6e9; 
+}
+.cen-post span{
+    display: block;
+    margin: 20px 5px ;
+    color: #90949c;
+    font-size: 15px;
+}
+.cen-post-btn{
+    border-top: 1px solid #e9ebee;
+    margin: 20px 5px;
+}
+.cen-post-btn li{
+    border-radius: 13px;
+    color: #4b4f56;
+    background: #f6f7f9;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px 5px;
+}
+.fa-picture-o{
+    color: #2BA32C;
+}
+.fa-smile-o{
+    color: #F4991A;
+}
+/*---------- post content ----------*/
+.cen-content{
+    margin: 10px;
+}
+.cen-content .img-profile{
+    width: 10%;
+    float: left;    
+}
+.cen-content .title{
+    display: block;
+    margin: 5px 12%;
+}
+.cen-content span{
+    display: block;
+    font-size: 15px;
+    color: #90949c;
+    padding-top: 5px;
+}
+.cen-content a{
+    color: #365899;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.cen-content .img-content{
+    width: 100%;
+    padding-bottom: 8px;
+}
+.cen-content p{
+    font-size: 15px;
+    margin: 10px 6px;
+}
+.cen-content .btn{
+    border-top: 1px solid #e9ebee;
+    color: #7f7f7f;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+.cen-content .btn ul{
+    width: 100%;
+    display: block;
+}
+.cen-content .btn li{
+    padding: 5px 10px;
+}
+/*______post content next part______*/
+.part2{
+    background: #f6f7f9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: auto 15px;
+}
+/*......people who like the post......*/
+.part2 .like{
+    display: block;
+    color: #365899;
+    border-left: 3px solid #4080ff;
+    border-top: 1px solid #e1e2e3;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+/*......information of comment......*/
+.part2 .comment .top{
+    border-top: 1px solid #e1e2e3;
+    font-size: 13px;
+    margin: 0px 15px;
+    padding-top: 10px;
+}
+.part2 .comment .top a{
+    color: #365899;
+    font-size: 13px;
+    text-decoration: none;
+}
+.part2 .comment .top span{
+    float: right;
+    font-size: 13px;
+    color: #90949c;
+}
+/*......content of comment......*/
+.part2 .comment .content{
+     margin: 3px 10px;
+}
+.part2 .comment .content .img-profile{
+    width: 7%;
+    float: left;   
+    display: block;
+}
+.part2 .comment .content div{
+    display: block;
+    margin: 5px 0 5px 10%;
+    font-size: 13px;
+}
+.part2 .comment .content span{
+    display: block;
+}
+.part2 .comment .content .name{
+    font-weight: bold;
+}
+.part2 .comment .content a{
+    color: #365899;
+}
+.part2 .comment .content .time{
+    color: #90949c;
+}
+/*......see more comment......*/
+.part2 .comment .bottom{
+    font-size: 13px;
+    margin: 0px 15px;
+    padding-top: 10px;
+}
+.part2 .comment .bottom a{
+    color: #365899;
+}
+/*......type your comment......*/
+.content .type{
+    background: #fff;
+    margin: 5px 5px;
+    border: 1px solid #e1e2e3;
+}
+.content .type i{
+    float: right;
+    line-height: 30px;
+    padding-right: 10px;
+    color: #90949c;
+}
+.content input{
+    border: none;
+    height: 30px;
+}
+
+/*============Center-2=============*/
+.col-center-2{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin: 0px;
+    margin-left: 0.5%;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.col-center-2 .row{
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 2px;
+    display: table;
+    width: 100%;
+}
+.col-center-2 .first{
+    padding: 10px;
+    background: #fff;
+    border-radius: 2px;
+    display: table;
+}
+/*---------- Fan Page ----------*/
+/*______title______*/
+.fanpage .title{
+    color: #90949c;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e1e2e3;
+}
+.fanpage .title i{
+    float: right;
+    margin: 1px;
+}
+/*______profile______*/
+.fanpage .profile{
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e2e3;
+}
+.fanpage .profile img{
+    width: 20%;
+    float: left;
+    padding-right: 5%;
+}
+.fanpage .profile .name , .profile .notice{
+    display: block;
+    width: 75%;
+}
+.fanpage .profile .name{
+    color: #365899;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+.fanpage .profile .notice span{
+    padding: 0px 5px;
+    font-size: 13px;
+    color: #90949c;
+}
+/*______Edit______*/
+.fanpage .edit .col{
+    width: 100%;
+    height: 50px;
+}
+.fanpage .edit .col li{
+    width: 25%;
+    height: 50px;
+    margin: 0;
+}
+.fanpage .edit .col .row{
+    margin: 0;
+    width: 100%;
+    padding: 0px;
+}
+.fanpage .edit .col .row li{
+    width: 100%;
+    height: 20px;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    color: #90949c;
+}
+/*______Button______*/
+.fanpage .btn{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fanpage .btn button{
+    display: inline-block;
+    width: 33%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 0px;
+    background: #fff;
+    border: 1px solid #ced0d4;
+    font-size: 13px;
+}
+.fanpage .btn button:hover{
+    background: #e9ebee;
+}
+.fanpage .btn .active{
+    color: #4b4f56;
+    font-weight: bold;
+    background: #dddfe2;
+}
+/*______Button______*/
+.fanpage .likecount{
+    margin: 10px 0px;
+    width: 100%;
+}
+.fanpage .likecount ul{
+    display: block;
+    float: none;
+}
+.fanpage .likecount ul li{
+    display: block;
+    text-align: center;
+    float: none;
+}
+.fanpage .likecount ul li:nth-child(1){
+    font-size: 26px;
+    font-family: inherit;
+}
+.fanpage .likecount ul li:nth-child(1):hover,.fanpage .likecount ul li:nth-child(2):hover{
+    text-decoration: underline;
+}
+.fanpage .likecount ul li:nth-child(2){
+    font-size: 15px;
+    color: #42b72a;
+}
+.fanpage .likecount ul li:nth-child(3){
+    margin: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e9ebee;
+}
+.fanpage .likecount ul li img{
+    width: 10%;
+    border-radius: 50%;
+    
+}
+/*______Holding activity______*/
+.fanpage .holding{
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e9ebee;
+}
+.fanpage .holding-title{
+    border-bottom: none;
+}
+.fanpage .holding img{
+    width: 20%;
+    padding: 8px 8px 8px 0px;
+    float: left;
+}
+.fanpage .holding span{
+    width: 70%;
+    display: inline-block;
+    float: left;
+    margin-right: 12px;
+    font-size: 13px;
+    padding-top: 8px;
+    color: #4b4f56;
+}
+.fanpage .holding button{
+    background: #365899;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px 0px;
+}
+/*______New Post______*/
+/*......title......*/
+.fanpage .newpost span{
+    display: block;
+    color: #90949c;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+.fanpage .newpost .content{
+    width: 80%;
+    border: 1px solid #e9ebee;
+    border-radius: 5px;
+}
+.fanpage .newpost .content img{
+    width: 12%;
+    margin: 5px;
+    margin-bottom: 0px;
+    float: left;
+}
+.fanpage .newpost .content a{
+    display: block;
+    color: #365899;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.fanpage .newpost .content span{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    color: #90949c;
+    font-size: 13px;
+}
+/*......content......*/
+.fanpage .newpost .content .overflow{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    height: 20px;
+    margin: 5px;
+}
+/*......comment......*/
+.fanpage .newpost .content .info{
+    display: block;
+    margin: 5px;
+}
+.fanpage .newpost .content .info a{
+    display: inline;
+    color: #898f9c;
+}
+.fanpage .newpost .content .info .comment{
+    display: inline;
+    float: right;
+    margin: 0px;
+}
+/*......button......*/
+.fanpage .newpost .content .btn{
+    display: block;
+    border-top: 1px solid #e9ebee;
+}
+.fanpage .newpost .content .btn button{
+    background: #365899;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px 0px 5px 140px;;
+    width: 110px;
+}
+/*---------- Birthday ----------*/
+.birth{
+    display: block;
+    width: 100%;
+}
+.birth:hover{
+    background: #f6f7f9;
+    border-radius: 2px;
+}
+.birth img{
+    width: 15px;
+    float: left;
+    margin: 3px;
+}
+.birth p{
+    color: #365899;
+    font-size: 13px;
+    display: inline;
+}
+.birth p span{
+    font-weight: bold;
+}
+/*---------- Below Info---------*/
+.below .info{
+    width: 270px;
+    display: inline-block;
+}
+.below .info span, .below .info a{
+    font-size: 13px;
+}
+.below .info span{
+    color: #898f9c;
+}
+.below .info a{
+    color: #365899;
+}
+.below button{
+    float: right;
+    background: #e9ebee;
+    border: 1px solid #ced0d4;
+    padding: 10px;
+    border-radius: 3px;
+}
+/*---------- Right Aside ----------*/
+.col-right{
+    display: block;
+    width: 15%;
+    min-width: 200px;
+    margin-left: 5%;
+    float: right;
+    background: #e9ebee;
+    border-radius: 2px;
+    top: 0;
+    border-left: 1px solid #ccc;
+    margin-top: 0px;
+}
+/*______News______*/
+.col-right .news .bottomline{
+    margin: 0px 8px;
+    margin-top: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.col-right .news .row{
+    box-sizing: border-box;
+    height: 40px;
+}
+.col-right .news .row a{
+    width: 200px;
+    padding: 0px 8px;
+    padding-top: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+.col-right  .row a .img{
+    width: 30px;
+    float: left;
+    padding-right: 5px;
+}
+.col-right .row a .img img{
+    width: 100%;
+}
+.col-right .news .row a .content{
+    display: inline;
+    font-size: 13px;
+    color: #000;
+    height: 30px;
+}
+.col-right .news .row a .content .name{
+    font-weight: bold;
+}
+/*______Friends______*/
+.col-right .friends{
+    border-top: 1px solid #ccc;
+}
+.col-right .friends .row{
+    box-sizing: border-box;
+}
+.col-right .friends .row a{
+    width: 200px;
+    padding: 0px 8px;
+    padding-top: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+.col-right .friends .row a .content{
+    display: inline;
+    font-size: 13px;
+    line-height: 30px;
+    color: #000;
+}
+.col-right .friends .row a .content .dot{
+    float: right;
+    width: 6px;
+    height: 6px;
+    background: rgb(66, 183, 42);
+    border-radius: 50%;
+    margin: 12px 5px;
+    display: inline-block;
+}
+.col-right .friends .group{
+    color: #4c4c4c;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 0px 8px 8px;
+    padding: 0px;
+    background: none;
+    height: 20px;
+}
+/*______Search______*/
+.col-right .search{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: #f6f7f9;
+    position: absolute;
+}
+.col-right .search input{
+    display: inline-block;
+    width: 120px;
+    border: none;
+    background: #f6f7f9;
+}
+.col-right .search i{
+    padding: 0px 3px;
+}
+/*......see more comment......*/
+/*============Center-2=============*/
