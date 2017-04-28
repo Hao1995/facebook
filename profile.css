@@ -1,56 +1,48 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
 body{
-    margin: 0px;
+    background: #e9ebee;
+}
+ul,li{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+header,section,aside,footer{
+    display: block;
+    clear: both;
+}
+.col-center-1,.col-left,.col-right{
+    margin: 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /*============Navagation Bar=============*/
-header{
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
+.group{
     top: 0;
     border-radius: 0px;
     background: #3b5998;
-    /*padding-left: 5%;*/
+    padding-left: 5%;
     height: 40px;
 }
-header .group{
-    height: 100%;
-    width: 100%;
-    max-width: 960px;
-    min-width: 600px;
-    margin: 0px auto;
-    margin-right: 250px;
-    border: 1px solid #c9c9c9;
-    box-sizing: border-box;
-}
-/*---------- NavBar group ----------*/
-header .group .right, header .group .left{
-    flex: initial;
-    height: 100%;
-    border: 1px solid #c9c9c9;
-    box-sizing: border-box;
+.group .left{
+    float: left;
     display: inline-block;
-    margin: 0px;
+    width: 45%;
 }
-header .group .left{
-    width: 40%;
-    min-width: 250px;
-    margin-right: auto;
-    border: none;
-}
-header .group .right{
-    width: 343px;
-    float: right;
-}
-/*---------- NavBar left ----------*/
-header .group .left .fa-facebook-official{
+.group .fa-facebook-official{
     color: #fff;
-    margin: 6px;
-    font-size: 1.8em;
+    float: left;
+    margin: 3px 0px;
 }
-header .group .left .search{
-    width: 
-}
-/*
-.group .left .search{
+.group .search{
     border: 1px solid #e5e6e9;
     border-radius: 5px;
     margin-left: 10px;
@@ -59,20 +51,20 @@ header .group .left .search{
     float: left;
     width: 80%;
 }
-.group .left .search input{
+.group .search input{
     width: 80%;
     border: none;
     font-size: 15px;
     padding: 4px 5px;
 }
-.group .left .search i{
+.group .search i{
     float: right;
     background: #f6f7f9;
     border-radius: 0 3px 3px 0;
     padding: 5px 15px;
-}*/
+}
 /*---------- NavBar right ----------*/
-/*.group .right{
+.group .right{
     display: inline-block;
     float: right;
     margin-right: 21%;
@@ -96,18 +88,767 @@ header .group .left .search{
 .group .right span{
     margin: 0px 5px;
     color: #29487d;
-}*/
+}
 /*______NavBar Right icon______*/
-/*.group .right .icon{
+.group .right .icon{
     display: inline-block;
     margin: 0px 8px;
     margin-top: 10px;
 }
 .group .right .icon i{
     margin: 0px 10px;
-}*/
-
-.center{
-    width: 960px;
-    background: blue;
 }
+
+/*============Section Top=============*/
+.sec-top{
+    padding-right: 80px;
+    width: 850px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 65px;
+}
+/*---------- Cover ----------*/
+.cover{
+    height: 360px;
+    background: #c9c9c9;
+    margin-bottom: 15px;
+}
+.cover .profile{
+    height: 168px;
+    position: absolute;
+    top: 210px;
+    left: 80px;
+    border-radius: 5px;
+}
+.cover .img{
+    height: 320px;
+    box-sizing: border-box;
+    background-image: url("assets/images/cover.png");
+    background-repeat : no-repeat;
+    background-size: auto 100%;
+}
+.cover .img button{
+    position: relative;
+    left: 550px;
+    top: 270px;
+    width: 140px;
+    height: 26px;
+    padding: 0px 6px;
+    color: #4b4f56;
+    font-weight: bold;
+    background: #f6f7f9;
+    border: 1px solid;
+}
+.cover .img button .fa-pencil{
+    padding-right: 5px;
+}
+.cover .img button .first{
+    border-right: 1px solid #c9c9c9;
+    width: 85px;
+    display: inline-block;
+    padding-right: 5px;
+}
+.cover .img button a{
+    color: #4b4f56;
+}
+.cover .img button .fa-ellipsis-h{
+    padding-left: 5px;
+}
+/*______Section Top Btn______*/
+.cover .btn{
+    height: 42px;
+    background: #fff;
+    padding-left: 200px;
+    border: 1px solid #e9eaed;
+    border-radius: 0px 0px 5px 5px;
+}
+.cover .btn a{
+    border-right: 1px solid #e9eaed;
+    font-size: 15px;
+    line-height: 3.05;
+    height: 40px;
+    padding: 0 17px;
+    font-weight: bold;
+    display: inline-block;
+    color: #365899;
+}
+.cover .btn a span{
+    color: #89919c;
+    font-size: 12px;
+    padding-left: 6px;
+}
+.cover .btn .active{
+    color: #4b4f56;
+    background: #fff;
+}
+.cover .btn .active span{
+    position: relative;
+    left: -35px;
+    top: 18px;
+    color: #e9ebee;
+}
+.cover .btn .active i{
+    font-size: 1.5em;
+}
+
+/*============Left Aside=============*/
+.col-left{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    
+    border-radius: 2px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.col-left .row{
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 3px;
+}
+.col-left .introduce, .col-left .album, .col-left .friends{
+    margin: 0px 12px;
+    background: #fff;
+}
+/*---------- Title ----------*/
+.col-left .title{
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+.col-left .title .name{
+    font-size: 17px;
+    padding-left: 5px;
+}
+.col-left .title i{
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.3em;
+}
+.col-left .introduce .title i{
+    background: #4267b2;
+}
+.col-left .album .title i{
+    background: #a5d950;
+}
+.col-left .friends .title i{
+    background: #f50e6b;
+}
+.col-left .friends .title .num{
+    font-size: 15px;
+    color: #90949c;
+}
+/*---------- Introduce ----------*/
+/*______Motto______*/
+.col-left .introduce .motto{
+    padding: 12px 16px;
+    text-align: center;
+}
+/*______experience______*/
+.col-left .introduce .experience{
+    border-top: 1px solid #e9ebee;
+}
+.col-left .introduce .experience ul{
+    margin-top: 8px;
+    padding: 4px 0px;
+    float: none;
+}
+.col-left .introduce .experience li{
+    color: #1d2129;
+    padding: 4px 0px;
+    font-size: 13px;
+    line-height: 16px;
+    width: 100%;
+    float: none;
+}
+.col-left .introduce .experience li i{
+    margin-right: 12px;
+    color: #90949c;
+}
+.col-left .introduce .experience li a{
+    color: #365899;
+}
+.col-left .introduce .experience .new-photo{
+    padding-top: 10px;
+}
+.col-left .introduce .experience .new-photo i, .col-left .introduce .experience .new-photo a{
+    color: #4080ff;
+}
+/*______Image______*/
+.col-left .content{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-left .content a{
+    width: 32%;
+    display: inline-block;
+    margin-left: 0.5%;
+    position: relative;
+}
+.col-left .content a img{
+    width: 100%;
+}
+/*---------- Friends ----------*/
+/*______Image-Description______*/
+.col-left .content a .description{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 13px;
+    text-shadow:3px 3px 3px black;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+/*============Center-1=============*/
+.col-center-1{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    margin-left: 2%;
+    border: 1px solid #e5e6e9;
+}
+.col-center-1 .row{
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+.row{
+    width: 100%;
+}
+.col-center-1 .first{
+    margin: 0;
+    margin: 0px;
+}
+
+
+
+/*============Center 1=============*/
+/*---------- Self Post ----------*/
+.cen-post-nav, .cen-post, .cen-post-btn{
+    float: left;
+    width: 100%;
+}
+/*______ Self Post Navbar ______*/
+.cen-post-nav{
+    background: #f6f7f9;
+    color: #4b4f56;
+}
+.cen-post-nav ul{
+    margin: 10px 12px;
+}
+.cen-post-nav li{
+    padding: 0px 5px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 14px;
+    color:#365899;
+}
+.cen-post-nav .active{
+    color: #4b4f56;
+    position: relative;
+}
+.cen-post-nav .active i{
+    position: absolute;
+    color: #fff;
+    bottom: -16px;
+    left: 30px;
+    font-size: 1.5em;
+}
+.cen-post-nav li .img {
+    display: inline-block;
+}
+.cen-post-nav li .img img{
+    height: 13px;
+}
+/*______ Self Post Content ______*/
+.cen-post{
+    background: #fff;
+    position: relative;
+}
+.cen-post .img{
+    width: 40px;
+    float: left;
+    margin: 10px 10px;
+}
+.cen-post img{
+    width: 100%;
+    border: 1px solid #e5e6e9; 
+}
+.cen-post span{
+    display: block;
+    margin: 20px 5px ;
+    color: #90949c;
+    font-size: 25px;
+}
+.cen-post .emotion{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+.cen-post .emotion i{
+    color: #90949c;
+    font-size: 1.2em;
+}
+/*______ Self Post Btn ______*/
+.cen-post-btn{
+    border-top: 1px solid #e9ebee;
+}
+/*...... Button Left ......*/
+.cen-post-btn .btn-i{
+    margin: 8px 12px;
+    display: inline-block;
+    color: #90949c;
+}
+.cen-post-btn .btn-i i{
+    margin: 5px 0px;
+}
+/*...... Button Right ......*/
+.cen-post-btn .btn-submit{
+    margin: 8px;
+    display: inline-block;
+    float: right;
+}
+.cen-post-btn .btn-submit{
+    margin: 8px;
+    display: inline-block;
+    float: right;
+    height: 26px;
+}
+.cen-post-btn .btn-submit a{
+    background: #f6f7f9;
+    border: 1px solid #ced0d4;
+    color: #4b4f56;
+    margin: 0px 5px;
+    padding: 3px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+}
+.cen-post-btn .btn-submit a span, .cen-post-btn .btn-submit a i{
+    float: left;
+}
+.cen-post-btn .btn-submit a span{
+    padding: 0px 7px;
+    margin: 1px 0px;  
+}
+.cen-post-btn .btn-submit a i{
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 1px 0px;  
+}
+.cen-post-btn .btn-submit .post{
+    background: #4267b2;
+    border-color: #4267b2;
+    color: #fff;
+}
+
+/*---------- Post Content ----------*/
+
+.cen-content{
+    width: 100%;
+    padding: 12px;
+    padding-bottom: 0px;
+    float: left;
+    border-bottom: 1px solid #e1e2e3;
+    box-sizing: border-box;
+}
+/*______ Post Title ______*/
+.cen-content .title{
+    float: left;
+}
+/*...... Title Profile ......*/
+.cen-content .title .profile{
+    width: 40px;
+    display: inline-block;
+    float: left;
+}
+.cen-content .title .profile img{
+    width: 100%;
+}
+/*...... Title Text ......*/
+.cen-content .title .text{
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+    line-height: 1.38
+}
+.cen-content .title .text span{
+    font-size: 15px;
+    color: #90949c;
+    display: block;
+}
+.cen-content .title .text span a{
+    color: #365899;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.cen-content .title .text span a:hover, .cen-content .title .text span a:hover{
+    text-decoration: underline;
+}
+.cen-content .title .text .time a{
+    font-size: 13px;
+    color: #90949c;
+    font-weight: normal;
+}
+.cen-content .title .text .time .for:hover{
+    background: #f6f7f9;
+    border: 1px solid #ced0d4;
+    color: #4b4f56;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+/*______ Post Content ______*/
+.cen-content .content{
+    float: left;
+    width: 100%;
+}
+/*---------- Add New Photo ----------*/
+.cen-content .content p{
+    margin: 6px 0px;
+    font-size: 15px;
+}
+.cen-content .img-content, .cen-content .photo{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+/*______ Descripted photo ______*/
+.cen-content .description{
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+    padding-left: 10px;
+    font-size: 13px;
+    border-left: 2px solid #ccc;
+    box-sizing: border-box;
+}
+/*______________________________*/
+.cen-content .description .top{
+    float: left;
+    color: #90949c;
+    width: 100%;
+}
+.cen-content .description .top .left{
+    float: left;
+    width: 50%;
+}
+.cen-content .description .top .left .title{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    color: #365899;
+}
+.cen-content .description .top .left a{
+    color: #90949c;
+}
+.cen-content .description .top .left a:hover{
+    text-decoration: underline;
+}
+.cen-content .description .top .right{
+    float: right;
+}
+.cen-content .description .top .right button{
+    background: #f6f7f9;
+    border: 1px solid #ced0d4;
+    color: #4b4f56;
+    line-height: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0px 8px;
+}
+.cen-content .description .top .right button:hover{
+    background: #E3E3E6;
+}
+/*______________________________*/
+.cen-content .description .content{
+    float: left;
+    height: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+    margin: 10px 0px;
+}
+.cen-content .description .content p{
+    height: 70%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+}
+.cen-content .description .content span a{
+    color: #365899;
+}
+.cen-content .description .content span a:hover{
+    text-decoration: underline;
+}
+/*---------- Post Button ----------*/
+.cen-content .btn{
+    border-top: 1px solid #e9ebee;
+    color: #7f7f7f;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+.cen-content .btn ul{
+    width: 100%;
+    display: block;
+}
+.cen-content .btn li{
+    padding: 7px 2px;
+    padding-right: 35px;
+    color: #90949c;
+}
+.cen-content .btn li:hover{
+    color: #7f7f7f;
+    text-decoration: underline;
+}
+.cen-content .btn li i{
+    padding-right: 5px;
+}
+.cen-content .btn li i:hover{
+    padding-right: 5px;
+    text-decoration: none;
+}
+/*______Post Content Comment______*/
+.part2{
+    background: #f6f7f9;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 12px;
+    float: left;
+}
+/*......people who like the post......*/
+.part2 .like{
+    width: 100%;
+    float: left;
+    color: #365899;
+    padding: 10px 0px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+/*......information of comment......*/
+.part2 .comment{
+    float: left;
+    width: 100%;
+}
+.part2 .comment .top{
+    border-top: 1px solid #e1e2e3;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.part2 .comment .top a{
+    color: #365899;
+    font-size: 13px;
+    text-decoration: none;
+}
+.part2 .comment .top span{
+    float: right;
+    font-size: 13px;
+    color: #90949c;
+}
+/*......content of comment......*/
+.part2 .comment .content{
+     margin: 3px 0px;
+}
+.part2 .comment .content .img-profile{
+    width: 7%;
+    float: left;   
+    display: block;
+}
+.part2 .comment .content div{
+    display: block;
+    margin: 5px 0 5px 10%;
+    font-size: 13px;
+}
+.part2 .comment .content span{
+    display: block;
+}
+.part2 .comment .content .name{
+    font-weight: bold;
+}
+.part2 .comment .content a{
+    color: #365899;
+}
+.part2 .comment .content .time{
+    color: #90949c;
+}
+/*......type your comment......*/
+.part2 .comment .input{
+    width: 100%;
+    margin: 8px 0px;
+    float: left;
+}
+/*-----------------------------*/
+.part2 .comment .input .profile{
+    width: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+.part2 .comment .input .profile img{
+    width: 100%;
+    border: 1px solid #e1e2e3;
+}
+/*-----------------------------*/
+.part2 .comment .input .type{
+    width: 425px;
+    float: left;
+    margin-left: 8px;
+    line-height: 30px;
+    border: 1px solid #e1e2e3;
+    background: #fff;
+}
+.part2 .comment .input .type input{
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    width: 80%;
+    color: #90949c;
+}
+.part2 .comment .input .type i{
+    float: right;
+    line-height: 30px;
+    margin-right: 10px;
+    color: #90949c;
+}
+
+
+/*============ Right Aside =============*/
+
+
+.col-right{
+    display: block;
+    width: 15%;
+    min-width: 200px;
+    float: right;
+    background: #e9ebee;
+    border-radius: 2px;
+    top: 0;
+    border-left: 1px solid #ccc;
+    margin-top: 0px;
+}
+/*---------- News ----------*/
+.col-right .news .bottomline{
+    margin: 0px 8px;
+    margin-top: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.col-right .news .row{
+    box-sizing: border-box;
+    height: 40px;
+}
+.col-right .news .row a{
+    width: 200px;
+    padding: 0px 8px;
+    padding-top: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+.col-right  .row a .img{
+    width: 30px;
+    float: left;
+    padding-right: 5px;
+}
+.col-right .row a .img img{
+    width: 100%;
+}
+.col-right .news .row a .content{
+    display: inline;
+    font-size: 13px;
+    color: #000;
+    height: 30px;
+}
+.col-right .news .row a .content .name{
+    font-weight: bold;
+}
+/*---------- Friends ----------*/
+.col-right .friends{
+    border-top: 1px solid #ccc;
+}
+.col-right .friends .row{
+    box-sizing: border-box;
+}
+.col-right .friends .row a{
+    width: 200px;
+    padding: 0px 8px;
+    padding-top: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+.col-right .friends .row a .content{
+    display: inline;
+    font-size: 13px;
+    line-height: 30px;
+    color: #000;
+}
+.col-right .friends .row a .content .dot{
+    float: right;
+    width: 6px;
+    height: 6px;
+    background: rgb(66, 183, 42);
+    border-radius: 50%;
+    margin: 12px 5px;
+    display: inline-block;
+}
+.col-right .friends .group{
+    color: #4c4c4c;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 0px 8px 8px;
+    padding: 0px;
+    background: none;
+    height: 20px;
+}
+/*---------- Search ----------*/
+.col-right .search{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: #f6f7f9;
+    position: absolute;
+}
+.col-right .search input{
+    display: inline-block;
+    width: 120px;
+    border: none;
+    background: #f6f7f9;
+}
+.col-right .search i{
+    padding: 0px 3px;
+}
+
+
+
+
+
+/*============Center 1=============*/
+/*---------- Self Post ----------*/
+/*______ Self Post Btn ______*/
+/*...... Button Left ......*/
